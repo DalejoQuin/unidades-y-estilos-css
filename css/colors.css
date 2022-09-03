@@ -7,4 +7,130 @@ html {
 
 body {
     margin: 0;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#4F0A0A;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    color:#000000;
+}
+
+/* Clases de aplicación de colores. */
+
+.colors-by-name {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border: thick solid darkseagreen;
+    background-color: palegoldenrod;
+    color: midnightblue;
+    text-align: justify;
+}
+
+.colors-hex {
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    left: 150px;
+    border: thick double #634A73;
+    /* Para dar opacidad a un color, se agregan 2 digitos al final del color hexadecimal y dichos digitos van desde 00 hasta 99. */
+    background-color: #00051045;
+    color: #004585;
+    text-align: center;
+}
+
+.colors-rgb {
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    left: 300px;
+    border: thick dashed rgb(91, 233, 25);
+    /* Para dar opacidad en vez de usar rgb(x,x,x) se usa rgba (x,x,x,o) donde o es la opacidad que va de 0 a 1 */
+    background-color: rgba(236,10,13,0.7);
+    font-weight: bolder;
+    color: rgb(240, 166, 6);
+    text-align: right;
+}
+
+.colors-hsl {
+    width: 800px;
+    height: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    left: 450px;
+    /* hue: Tono, comprende los valores de 0 a 360 (angulos) del circulo cromatico 
+    saturation: intensidad del color que va de 0% a 100%
+    lightness: luminosidad del color que va de 0% a 100% */
+    border: thick dotted hsl(285, 36%, 59%);
+    /* Para agregar opacidad en vez de usar hsl usamos hsla(x,x,x,o) donde o es la opacidad que va de 0 a 1 (entre mas cerca del cero este el valor de la opacidad se percibe un efecto mas transparente.)*/
+    background-color: hsla(149, 85%, 20%,0.4);
+    color: hsl(266, 60%, 25%);
+}
+
+.colors-hsl img {
+    width: 200px;
+    height: 200px;
+}
+
+.colors-hsl p {
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+.current-color h2, p {
+    margin-left: 20px;
+}
+
+.current-color {
+    color: #900C3F;
+    width: 80%;
+    height: 500px;
+    margin-top: 10px;
+    border: thin solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transparent-current  p, h3 {
+    margin-left: 10px;
+    text-align: justify;
+    color: #000000;
+}
+
+.transparent-current {
+    width: 500px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: thin solid #1E04B0;
+    background-color: #50497A;
+    /* background-color: transparent es igual a tener rgba (0,0,0,0)
+    background-color: currentColor hereda el valor de la propiedad color por defecto en el navegador o hereda el valor de la propiedad color de un ancestro (desde el mas cercano al mas lejano)  */
+    background-color: transparent;
+    background-color: currentColor;
+}
+
+.opacity {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border: thin solid #1AB05A;
+    background-color: #0B3A3A;
+    color: #000000;
+    opacity: 0.68;
+}
+
