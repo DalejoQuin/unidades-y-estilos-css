@@ -46,4 +46,11 @@ body {
 
 .nav-menu > * {
     margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: rgb(116, 26, 44);;
 }
