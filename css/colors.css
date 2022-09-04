@@ -16,6 +16,24 @@ h1,h2,h3,h4,h5,h6 {
     color:#000000;
 }
 
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: larger;
+}
+
+footer  a:hover {
+    color:#E97043;
+    font-weight: bolder;
+}
+
 /* Clases de aplicación de colores. */
 
 .colors-by-name {
@@ -133,4 +151,3 @@ h1,h2,h3,h4,h5,h6 {
     color: #000000;
     opacity: 0.68;
 }
-
