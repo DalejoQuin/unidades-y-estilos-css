@@ -1,12 +1,79 @@
+/* General styles */
+
 html {
     box-sizing: border-box;
+    font-size: 1em;
 }
-  *, *:before, *:after {
+
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    margin-left: 20px;
+    margin: 1.25em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:#000000;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: larger;
+}
+
+footer  a:hover {
+    color:#E97043;
+    font-weight: bolder;
+}
+
+/* Document styles */
+
+.pixels {
+    background-color: #69DECC;
+    border: thin solid #000000;
+    /* px es una unidad absoluta que equivale a 1/96 pulgadas reales. */
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.em {
+    background-color: #726193;
+    border: thin solid #000000;
+    /* em es basado en la anchura de la 'm' de la fuente del documento*/
+    font-size: 1.250em;
+    padding: 1em;
+}
+
+.em-child {
+    background-color: #67D873 ;
+    border: thin double #000000;
+    /* el 'valor aplicado de 'em' toma como referencia el tamaño del ancestro (del mas cercano al mas lejano)' */
+    font-size: 2em;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.rem {
+    /* rem es basado en la anchura de la 'm' de la fuente del elemento raiz (html) */
+    background-color: #EEF649;
+    border: thin solid #000000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.rem-child {
+    background-color: #67D873;
+    border: thin solid #000000;
+    font-size: 0.8rem;
+    padding: 2rem;
 }
