@@ -2,7 +2,6 @@
 
 html {
     box-sizing: border-box;
-    font-size: 1em;
 }
 
 *, *:before, *:after {
@@ -79,16 +78,33 @@ footer  a:hover {
 }
 
 .ex {
-    /* ex se basa en la altura de la 'x' de la fuente del documento */
-    background-color: #0A5375;
-    border: thick double #79EA63;
+    background-color: #B13A1B;
+    border: thick double #ECF70A;
     font-size: 24px;
     padding: 1ex;
+    /* ex se basa en la altura de la 'x' de la fuente del documento */
 }
 
 .ex-child {
-    background-color: #5A4573 ;
-    border: medium solid #D7A42D ;
+    background-color: #ECF70A;
+    border: thick solid #B13A1B;
     font-size: 1ex;
-    padding: 4ex;
+    padding: 1ex;
+}
+
+.ch {
+    /* ch se basa en la anchura del '0' de la fuente del documento 
+    1ch es equivalente a un caracter (no se toman en cuenta los espacios.)*/
+    background-color: #b4a3d6;
+    width: 20ch;
+
+}
+
+.percent {
+    background-color: #e73f9c;
+    color: #ffffff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
 }
