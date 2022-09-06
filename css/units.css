@@ -77,3 +77,18 @@ footer  a:hover {
     font-size: 0.8rem;
     padding: 2rem;
 }
+
+.ex {
+    /* ex se basa en la altura de la 'x' de la fuente del documento */
+    background-color: #0A5375;
+    border: thick double #79EA63;
+    font-size: 24px;
+    padding: 1ex;
+}
+
+.ex-child {
+    background-color: #5A4573 ;
+    border: medium solid #D7A42D ;
+    font-size: 1ex;
+    padding: 4ex;
+}
