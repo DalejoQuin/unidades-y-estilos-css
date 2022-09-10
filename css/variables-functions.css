@@ -1,0 +1,91 @@
+:root {
+    /* Si voy a declarar variables que apliquen a todo el documento html las hago aqui. */
+    --text_color: #b33db3;
+    --bg-color:#45d801;
+    --border_color: #000000;
+    --general_padding: 1.5rem;
+    --width_window: 60%;
+    --height_window: 45vh;
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: larger;
+}
+
+footer  a:hover {
+    color:#E97043;
+    font-weight:bolder;
+}
+
+.custom-properties {
+    /* Las variables se declaran en un selector y estas operan dentro de ese selector y los descendientes de ese selector. */
+    --background1:#aab1d3;
+    --bakground2:#47d335;
+    --background3:#f59c38;
+    --background4:#532738;
+    --font_s1:18px;
+    --font_s2:24px;
+    --font_s3:10px;
+    --font_st1:italic;
+    --color_f1: #e21743;
+    --color_f2: #043c4d;
+    background-color: var(--background1);
+    width: var(--width_window);
+    height: var(--height_window);
+    border: thin solid var(--border_color);
+    padding: var(--general_padding);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom1 {
+    background-color: var(--bakground2);
+    font-style: var(--font_st1);
+    font-size: var(--font_s1);
+    color: var(--color_f1);
+}
+
+.custom2 {
+    background-color: var(--background3);
+    font-size: var(--font_s2);
+    color: var(--color_f2);
+    color: var(--text_color);
+}
+
+.custom3 {
+    background-color: var(--bg-color);
+    background-color: var(--background4);
+    font-size: var(--font_s3);
+}
+
+.calc1 {
+    --padding-size:2ch;
+    --num-ch:10ch;
+    background-color: var(--bg-color);
+    font-size: 2rem;
+    padding: var(--padding-size);
+}
+
+.calc1 p {
+    margin: 0;
+}
