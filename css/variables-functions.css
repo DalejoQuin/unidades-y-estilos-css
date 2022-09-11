@@ -79,13 +79,26 @@ footer  a:hover {
 }
 
 .calc1 {
+    margin-left: 1rem;
     --padding-size:2ch;
     --num-ch:10ch;
     background-color: var(--bg-color);
     font-size: 2rem;
     padding: var(--padding-size);
+    width: calc(var(--num-ch) + var(--padding-size)*2);
 }
 
 .calc1 p {
     margin: 0;
+}
+
+.content-img {
+    --content_width: 80%;
+    --content_height: 80vh;
+    --content_bg: #93acac;
+    margin-left: auto;
+    margin-right: auto;
+    width:var(--content_width);
+    height: var(--content_height);
+    background-color: var(--content_bg);
 }
