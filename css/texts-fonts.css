@@ -1,0 +1,93 @@
+:root {
+    --general_container_bgcolor: #af9898;
+    --header_bgcolor: #d36b26;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+.fonts {
+    background-color: var(--general_container_bgcolor);
+    width: 90%;
+    height: 60vh;
+}
+
+.font1 {
+    /* font-family llama una serie de tipografias y busca y aplica la que se encuentre instalada segun el orden la la familia de fuentes. */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* En este caso la primera que aplica es la 'Segoe UI' */
+    font-family: Geneva, Verdana, sans-serif;
+    /* En este segundo caso aplica la 'Geneva' */
+}
+
+.font2 {
+    background-color: var(--header_bgcolor);
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2;
+}
+
+.font3 {
+    font: italic small-caps bold 2rem/1.5 Tahoma;
+}
+
+/* Fuentes externas (locales)*/
+
+.foreign-fonts {
+    background-color: var(--general_container_bgcolor);
+    width: 90%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    /* defino el nombre de la familia de la fuente. */
+    font-family: "Rampart";
+    /* añadir la ruta de la fuente externa y el formato */
+    src: url("../fonts/RampartOne-Regular.woff") format("woff");
+    /* añadir un font-display: swap para que el navegador muestre primero una fuente segura y cuando termine de cargar las tipografias externas luego si muestre la tipografia personalizada */
+    font-display: swap;
+}
+
+/* LLamo la familia de la fuente creada en la clase, adicional se debe poner una fuente segura por si se presentan problemas al cargar la fuente externa. */
+
+.rampart-font {
+    font-family: "Rampart", sans-serif;
+    font-size: 2rem;
+}
+
+.internet-fonts {
+    width: 90%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.internet-fonts h4 {
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.internet-fonts p {
+    font-family: "Raleway",sans-serif;
+    font-size: 1.3rem;
+    color: #e42626;
+    text-align: center;
+}
+

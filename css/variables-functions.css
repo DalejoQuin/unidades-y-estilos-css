@@ -89,7 +89,7 @@ footer  a:hover {
     background-color: var(--bg-color);
     font-size: 2rem;
     padding: var(--padding-size);
-    width: calc(var(--num-ch) + var(--padding-size)*2);
+    width: calc(var(--num-ch) + var(--padding-size) * 2);
 }
 
 .calc1 p {
@@ -194,3 +194,19 @@ footer  a:hover {
     height: calc(var(--height_window) - 25px);
 }
 
+/* Funcion min - max */
+
+.f-min-max {
+    background-color: var(--bg-color);
+    color:var(--text_color);
+    /* la funcion min aplica el valor minimo de 2 o mas valores dados */
+    width: min(200px,20vw);
+    /* la funcion max aplica el valor maximo de 2 o mas valores dados */
+    height: max(200px,25vh);
+}
+
+/* Función clamp */
+
+h1 {
+    font-size: clamp(2rem,1rem + 3vw,3rem);
+}
