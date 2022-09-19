@@ -1,7 +1,6 @@
 :root {
     --general_container_bgcolor: #af9898;
     --header_bgcolor: #d36b26;
-
 }
 
 html {
@@ -91,3 +90,23 @@ body {
     text-align: center;
 }
 
+/* Iconos tipograficos con google fonts */
+
+.material-symbols-outlined {
+    font-size: 4rem;
+    color: #132f77;
+}
+
+/* Iconos tipograficos con fontawesome */
+
+.fa-solid,
+.fa-brands {
+    font-size: 4rem;
+    color: #000000;
+    margin-right: 2rem;
+}
+
+.fa-solid:hover,
+.fa-brands:hover {
+    color: #d66215;
+}

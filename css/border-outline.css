@@ -1,0 +1,68 @@
+:root {
+    --general_bgcolor: #84d1a4;
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1 {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.main-header {
+    background-color: var(--general_bgcolor);
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+}
+
+.radius {
+    background-color: #7d046b;
+    padding-top: 1rem;
+    
+}
+
+.container1 {
+    margin-left: 2rem;
+    width: 33vw;
+    height: 33vh;
+    background-color: var(--general_bgcolor);
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.container1 h2 {
+    text-align: center;
+}
+
+.container2 {
+    text-align: center;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    width: 33vw;
+    height: 33vh;
+    background-color: #c79959;
+    padding: 1rem;
+    /* para dar curvatura tipo elipse se separan los valores del border radius por un '/' */
+    border-radius: 4rem / 6rem;
+}
+
+.container3 {
+    text-align: center;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    width: 350px;
+    height: 350px;
+    background-color: #458291;
+    border-radius: 50%;
+}
+
+.container3 h2 {
+    padding-top: 150px;
+}
