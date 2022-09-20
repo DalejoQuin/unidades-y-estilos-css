@@ -1,0 +1,86 @@
+:root {
+    --general_bgcolor: #3c6754;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Xanh Mono', monospace;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main-header {
+    background-color: var(--general_bgcolor);
+    color: #ffffff;
+}
+
+.main-header > * {
+    margin-left: 2rem;
+}
+
+.fa-regular {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.box1 {
+    width: 400px;
+    height: 300px;
+    margin-left: 2vw;
+    border: thin solid #135598;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--general_bgcolor);
+}
+
+.back-image {
+    position: relative;
+}
+
+.box2 {
+    width: 400px;
+    height: 300px;
+    margin-left: 2vw;
+    border: thin solid #135598;
+    text-align: center;
+    color: #ffffff;
+    background-image: url("/img/gallery/papitas.jpg");
+}
+
+.text-box3 {
+    position: absolute;
+    top: -1rem;
+    margin-left: 2vw;
+    left: calc(400px + 1rem);
+}
+
+.box3 {
+    position: absolute;
+    top: 2.5rem;
+    left: calc(400px + 1rem);
+    width: 400px;
+    height: 300px;
+    margin-left: 2vw;
+    border: thin solid #135598;
+    text-align: center;
+    color: #ffffff;
+    background-image: url("/img/gallery/papitas.jpg");
+    background-size: 200px 150px;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
