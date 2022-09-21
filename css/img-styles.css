@@ -30,19 +30,14 @@ img {
 
 .img-card1 {
     border: medium solid #d11010;
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
 }
 
 .img-card1 img {
     background-color: bisque;
-    height: 300px;
-    object-fit: fill;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    object-fit: contain;
-    object-fit: none;
-    object-fit: contain;
     object-position: right top;
-    object-position: left bottom;
-    object-position: 50% 50%;
-} 
+}
