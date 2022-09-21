@@ -1,0 +1,48 @@
+:root {
+    --general-bgcolor: #3b1643;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--general-bgcolor);
+    color: #d7d1d1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+}
+
+header {
+    font-family: 'Bungee Spice', cursive;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-card1 {
+    border: medium solid #d11010;
+    width: 400px;
+    height: 400px;
+}
+
+.img-card1 img {
+    background-color: bisque;
+    height: 300px;
+    object-fit: fill;
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: none;
+    object-fit: contain;
+    object-position: right top;
+    object-position: left bottom;
+    object-position: 50% 50%;
+} 
